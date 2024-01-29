@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Encriptador</title>
+  </head>
+  <body>
+    <header class="header">
+      <span class="header-logo">a</span>
+    </header>
+    <main class="main">
+      <div class="input-container">
+        <textarea
+          class="input-element"
+          placeholder="Ingrese el texto aquí"
+          id="input"
+        ></textarea>
+      </div>
+      <span class="instructions">Solo letras minúsculas y sin acentos</span>
+      <div class="btn-container">
+        <button class="btn-primary" id="btn-encripted">Encriptar</button>
+        <button class="btn-primary btn-primary--bgt" id="btn-unencryptor">
+          Desencriptar
+        </button>
+      </div>
+    </main>
+    <aside class="aside">
+      <div class="aside-description" id="description">
+        <img
+          class="aside-description-img"
+          src="./assets/Muñeco.png"
+          alt="ilsutración de una persona con una lupa"
+        />
+        <p>Ningún mensaje fue encontrado</p>
+        <p>Ingrese el texto que desees encriptar o desencritar</p>
+      </div>
+      <div class="aside-output" id="text-output-container">
+        <p class="aside-output-text" id="text-output"></p>
+        <button class="btn-primary--bgt" id="btn-clipboard">Copiar</button>
+      </div>
+    </aside>
+    <script src="./encriptor.js"></script>
+  </body>
+</html>
